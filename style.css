@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    width: 1500px;
+    max-width: 1500px;
+    min-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+}
+
+.logo-container {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 230px;
+    height: auto;
+    object-fit: contain;
+}
+
+.title-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.norm1 p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    flex-shrink: 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.link:hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+
+.sort-options {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.sort-button {
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sort-button:hover {
+    background-color: #e9ecef;
+}
+
+.sort-button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.student-table th,
+.student-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.student-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.student-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.action-links a {
+    padding: 5px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.edit-link {
+    background-color: #28a745;
+}
+
+.delete-link {
+    background-color: #dc3545;
+}
+
+ul, ol {
+    padding-left: 20px; 
+    margin: 0; /
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+
+    .container {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        width: auto;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .title-container {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .norm1 p {
+        font-size: 1em;
+    }
+    
+    .logo {
+        width: 70px;
+    }
+
+    .sort-options {
+        flex-direction: column;
+    }
+
+    .student-table {
+        overflow-x: auto;
+        display: block;
+    }
+}
