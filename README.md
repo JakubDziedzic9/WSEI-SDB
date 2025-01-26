@@ -40,3 +40,5 @@ This is an application written in PHP to manage a student database. The function
      ```
      http://localhost/akademicka_baza/
      ```
+
+     Developed by Jakub Dziedzic 25th January 2025
